@@ -30,18 +30,17 @@ Lastly, you will finalize a machine learning method for constructing recommendat
 
 ## File Descriptions
 
-**Recommendations_with_IBM.ipynb** - Jupyter Notebook for project 
-**project_test.py** - Python file contains solutions for test questions in the Jupyter Notebook. 
-
-**top_10.p** - P file contains top 10 articles. 
-**top_20.p** - P file contains top 20 articles.  
-**top_5.p** - P file contains top 5 articles. 
+**Recommendations_with_IBM.ipynb** - Jupyter Notebook for project.<br/>
+**project_test.py** - Python file contains solutions for test questions in the Jupyter Notebook.<br/>
+**top_10.p** - P file contains top 10 articles.<br/> 
+**top_20.p** - P file contains top 20 articles. <br/> 
+**top_5.p** - P file contains top 5 articles.<br/> 
 **user_item_matrix.zip** - zipped file for *user_item_matrix.p*. We need to unzip the file to use it. This is P file containing user item matrix that we will use to perform Singular Value Decomposition (SVD).<br/>
 (**Note:** P files are used by project_test.py to test top n articles we obtained via functions we created.)<br/>
 
 ### Datasets<br/>
-**user-item-interactions.csv** - list of user article interactions.
-**articles_community.csv** - articles available on the IBM platform
+**user-item-interactions.csv** - list of user article interactions.<br/>
+**articles_community.csv** - articles available on the IBM platform.<br/>
 
 ## Installation
 There should be no extra libraries required to install apart from those coming together with Anaconda distribution. There should be no issue to run the codes using Python 3.5 and above.
