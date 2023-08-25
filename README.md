@@ -1,48 +1,47 @@
-# Recommendations_with_IBM (Udacity - Data Scientist Nanodegree Program)
-  
-## Table of Contents
-1. [Introduction](#introduction)
-2. [File Descriptions](#file-descriptions)
-3. [Installation](#installation)
-4. [Instructions](#instructions)
-5. [Acknowledgements](#acknowledgements)
+# Recommendations with IBM     
 
 ## Introduction
-This project is part of the Udacity's Data Scientist Nanodegree Program in collaboration with IBM.
+ 
+The goal of the project is to analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles that we will think they will like. 
+The IBM Watson Studio, there is a large collaborative community ecosystem of articles, datasets, notebooks, and other A.I. and ML. assets. Users of the system interact with all of this. Within this scope, we created this recommendation system project to enhance the user experience and connect them with assets. This personalizes the experience for each user.
 
-In this project, we will analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles we think they will like. 
+## The Tasks
+Your project will be divided into the following tasks
 
-### Our Tasks
-The project is divided into the following tasks:
+I. Exploratory Data Analysis
 
-#### i. Exploratory Data Analysis<br/>
-Before making recommendations of any kind, we will need to explore the data we are working with for the project. Dive in to see what we can find. There are some basic, required questions to be answered about the data we are working with throughout the rest of the notebook. This space is used to explore, before we dive into the details of our recommendation system in the later sections.
+Before generating any type of recommendations, it's essential to examine the data associated with the  project. Delve into the dataset to uncover insights. Fundamental and necessary inquiries about the data will guide your exploration throughout the notebook. This stage of exploration is critical before delving into the finer aspects of your recommendation system in the subsequent sections.
 
-#### ii. Rank Based Recommendations<br/>
-To get started in building recommendations, we will first find the most popular articles simply based on the most interactions. Since there are no ratings for any of the articles, it is easy to assume the articles with the most interactions are the most popular. These are then the articles we might recommend to new users (or anyone depending on what we know about them).
+II. Rank Based Recommendations
 
-#### iii. User-User Based Collaborative Filtering<br/>
-In order to build better recommendations for the users of IBM's platform, we could look at users that are similar in terms of the items they have interacted with. These items could then be recommended to the similar users. This would be a step in the right direction towards more personal recommendations for the users. We will implement this next.
+To initiate the process of creating recommendations, your first step involves identifying the articles that have garnered the highest number of interactions, signifying their popularity. Given the absence of ratings, it becomes straightforward to consider articles with the most interactions as the ones with the greatest appeal. These articles subsequently become candidates for recommendations to new users or individuals, depending on the available information about them.
 
-#### iV. Content Based Recommendations (EXTRA - not required for completing this project)<br/>
-Given the amount of content available for each article, there are a number of different ways in which someone might choose to implement a content based recommendations system. Using our NLP skills, we might come up with some extremely creative ways to develop a content based recommendation system. We are encouraged to complete a content based recommendation system, but not required to do so to complete this project.
+III. User-User Based Collaborative Filtering
 
-#### v. Matrix Factorization<br/>
-Finally, we will complete a machine learning approach to building recommendations. Using the user-item interactions, we will build out a matrix decomposition. Using our decomposition, we will get an idea of how well we can predict new articles an individual might interact with (spoiler alert - it isn't great). we will finally discuss which methods we might use moving forward, and how we might test how well our recommendations are working for engaging users.
+To enhance recommendations on IBM's platform, an effective strategy is to examine users who share similar interaction patterns with items. By suggesting these items to users who exhibit similarity, we take a positive stride towards delivering more personalized recommendations. The forthcoming implementation will focus on realizing this approach.
+
+IV. Content Based Recommendations (EXTRA - NOT REQUIRED)
+
+Considering the abundance of content associated with each article, there exists a variety of approaches for crafting a content-based recommendation system. Leveraging your expertise in natural language processing (NLP), you have the opportunity to devise innovative methods to construct such a system. While creating a content-based recommendation system is encouraged, it's not mandatory to fulfill the project requirements.
+
+V. Matrix Factorization
+
+Lastly, you will finalize a machine learning method for constructing recommendations. By utilizing user-item interactions, you will develop a matrix decomposition technique. This process will provide insights into your capability to forecast potential articles that an individual could engage with (though the accuracy may be limited). Subsequently, you will deliberate on potential strategies for future implementation and assess how effectively your recommendations engage users, including possible testing approaches.
 
 ## File Descriptions
-**Recommendations_with_IBM.ipynb** - Jupyter Notebook for project<br/>
-**project_test.py** - Python file contains solutions for test questions in the Jupyter Notebook.<br/>
 
-**top_10.p** - P file contains top 10 articles.<br/>
-**top_20.p** - P file contains top 20 articles.<br/> 
-**top_5.p** - P file contains top 5 articles.<br/>
+**Recommendations_with_IBM.ipynb** - Jupyter Notebook for project 
+**project_test.py** - Python file contains solutions for test questions in the Jupyter Notebook. 
+
+**top_10.p** - P file contains top 10 articles. 
+**top_20.p** - P file contains top 20 articles.  
+**top_5.p** - P file contains top 5 articles. 
 **user_item_matrix.zip** - zipped file for *user_item_matrix.p*. We need to unzip the file to use it. This is P file containing user item matrix that we will use to perform Singular Value Decomposition (SVD).<br/>
 (**Note:** P files are used by project_test.py to test top n articles we obtained via functions we created.)<br/>
 
-### Folder: data<br/>
-**articles_community.csv** - articles available on the IBM platform<br/>
-**user-item-interactions.csv** - list of articles that users interact with<br/>
+### Datasets<br/>
+**user-item-interactions.csv** - list of user article interactions.
+**articles_community.csv** - articles available on the IBM platform
 
 ## Installation
 There should be no extra libraries required to install apart from those coming together with Anaconda distribution. There should be no issue to run the codes using Python 3.5 and above.
@@ -52,9 +51,6 @@ pandas, numpy, matplotlib, pickle
 
 ## Instructions
 Run the codes inside Jupyter notebook to complete the project.
-
-#### *Future Work*
-Using the notebook, we could now save our recommendations for each user, develop a class to make new predictions and update our results, and make a flask app to deploy our results.
 
 ## Acknowledgements
 * [Udacity](https://www.udacity.com/) for providing an excellent Data Scientist training program.
